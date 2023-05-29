@@ -9,13 +9,14 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 
 /* import specific icons */
-import { faUserSecret } from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+// import { fasChartShopping } from "@fortawesome/free-solid-svg-icons";
 
 /* add icons to the library */
-library.add(faUserSecret);
+library.add(faBars);
+// library.add(fasChartShopping);
 
 import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/js/bootstrap.js";
 
 createApp(App).component("font-awesome-icon", FontAwesomeIcon).mount("#app");
-
-import "bootstrap/dist/js/bootstrap.js";
