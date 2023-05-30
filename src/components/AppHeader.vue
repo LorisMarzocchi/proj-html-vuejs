@@ -5,7 +5,7 @@
         <div class="navBar d-flex justify-content-between align-items-center">
             <img src="../assets/imgProject/avadabarbers-logo-x2-200x70.png" alt="">
             <div>
-                <!-- <font-awesome-icon icon="fa-solid fa-cart-shopping" style="color: white;" /> -->
+                <font-awesome-icon icon="fa-solid fa-cart-shopping" style="color: white;" />
                 <button class="btn btn-link text-decoration-none" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><font-awesome-icon
                         icon="fa-solid fa-bars" /></button>
@@ -62,7 +62,7 @@
 
     h1 {
         font-weight: bold;
-
+        font-family: $font-title;
         color: white;
         font-size: 9rem;
     }
