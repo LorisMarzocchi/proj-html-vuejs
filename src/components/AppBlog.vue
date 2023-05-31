@@ -57,7 +57,10 @@ span {
     @include linkBtn;
     text-decoration: none;
     font-weight: bold;
-    // margin-bottom: 50px;
+
+    &:hover {
+        cursor: pointer;
+    }
 
 
 
