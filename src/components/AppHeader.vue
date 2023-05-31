@@ -1,31 +1,43 @@
-<script></script>
+<script>
+export default {
+    props: {
+        ArrMenu: Array,
+    },
+};
+
+</script>
 
 <template>
     <div class="navHeader container-fluid">
-        <div class="navBar d-flex justify-content-between align-items-center">
-            <img src="../assets/imgProject/avadabarbers-logo-x2-200x70.png" alt="">
-            <div>
-                <font-awesome-icon icon="fa-solid fa-cart-shopping" style="color: white;" />
+        <div class="navBar d-flex justify-content-between">
+            <img src="../assets/imgProject/avadabarbers-stickylogo-x2-200x70.png" alt="">
+            <div class="d-flex align-items-baseline justify-content-end">
+                <font-awesome-icon icon="fa-solid fa-cart-shopping" style="color: white; font-size: 2rem; " />
                 <button class="btn btn-link text-decoration-none" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><font-awesome-icon
                         icon="fa-solid fa-bars" /></button>
 
-                <div class="offcanvas w-100 offcanvas-end" tabindex="-1" id="offcanvasTop"
+                <div class="offcanvas bg-dark w-100 offcanvas-end" tabindex="-1" id="offcanvasTop"
                     aria-labelledby="offcanvasTopLabel">
                     <div class="offcanvas-header">
                         <h5 id="offcanvasTopLabel">Offcanvas top</h5>
-                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
+                        <button style="color: white;" type="button" class="btn-close text-reset btn-light btn-close-white"
+                            data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
-                    <div class="offcanvas-body">
-                        ...popolare dinamicam
+                    <div class="offcanvas-body d-flex justify-content-center fs-5 align-items-center bg-dark">
+                        <ul style="padding-bottom: 200px;">
+                            <li class=" text-decoration-none" v-for="eleMenu in ArrMenu" :key="eleMenu.name">
+                                <a class=" text-decoration-none " style="color: white;" href="#">{{ eleMenu.name }}</a>
+                            </li>
+                        </ul>
+
                     </div>
                 </div>
 
             </div>
 
         </div>
-        <div class="infoHeader mt-4 d-flex justify-content-between align-items-center">
+        <div class="presentation mt-4 d-flex justify-content-between align-items-center">
             <div>
 
                 <h1>Barber shop</h1>
@@ -45,7 +57,8 @@
     background-image: url("../assets/imgProject/avadabarbers-homepage-hero-bg.jpg");
     background-position-x: center;
     background-size: 100%;
-    height: 800px;
+    height: 100%;
+    padding-top: 2rem;
     position: relative;
 
     .btn-link {
@@ -54,7 +67,7 @@
 
 }
 
-.infoHeader {
+.presentation {
 
     width: 1400px;
     margin: auto;
@@ -95,7 +108,7 @@
 
 .navBar {
 
-    max-width: 1350px;
+    max-width: 1400px;
     margin: auto;
     margin-top: 30px;
 

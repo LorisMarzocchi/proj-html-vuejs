@@ -58,6 +58,10 @@ export default {
 <style lang="scss" scoped>
 @use "../assets/styles/partial/variables.scss" as *;
 
+.cardDescription {
+    width: 25%;
+}
+
 a {
 
     text-decoration: none;
@@ -65,10 +69,11 @@ a {
     width: 450px;
     color: #be9359;
     border: 4px solid $color-btn;
-    text-align: center;
     padding: 20px;
-    font-size: 1.5rem;
+    padding-inline: 80px;
+    font-size: 1.2rem;
     margin-bottom: 150px;
+    margin-top: 120px;
 }
 
 .service {
@@ -82,6 +87,8 @@ a {
 }
 
 .cardProduct {
+    background-image: url(/src/assets/imgProject/avadabarbers-reviewsbackground.jpg);
+    background-size: cover;
     width: 100%;
     height: 500px;
     margin: auto;
@@ -91,8 +98,7 @@ a {
 
 
     img {
-        width: 400px;
-        height: 400px;
+        width: 100%;
     }
 
     h3 {

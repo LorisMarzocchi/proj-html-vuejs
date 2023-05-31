@@ -1,6 +1,7 @@
 <script>
-import AppProducts from './AppProducts.vue';
 import AppReviews from './AppReviews.vue';
+import AppProducts from './AppProducts.vue';
+import AppBlog from './AppBlog.vue';
 export default {
     data() {
         return {
@@ -27,6 +28,7 @@ export default {
     components: {
         AppProducts,
         AppReviews,
+        AppBlog,
     }
 }
 
@@ -56,6 +58,7 @@ export default {
     </div>
     <AppProducts />
     <AppReviews />
+    <AppBlog />
 </template>
 <style lang="scss" scoped>
 @use "../assets/styles/partial/variables.scss" as *;
