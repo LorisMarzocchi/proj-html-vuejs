@@ -31,12 +31,12 @@ export default {
             </ul>
             <h3>FOLLOW US</h3>
             <div class="icons" style="color: white; font-size: 2rem;">
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+                <div class="socials_icons text-light">
+                    <i class="fa-brands fa-facebook px-2"><a href="#"></a></i>
+                    <i class="fa-brands fa-twitter px-2"><a href="#"></a></i>
+                    <i class="fa-brands fa-youtube px-2"><a href="#"></a></i>
+                    <i class="fa-brands fa-instagram px-2"><a href="#"></a></i>
+                </div>
 
 
             </div>
@@ -50,7 +50,10 @@ export default {
 <style lang="scss" scoped>
 @use "../assets/styles/partial/variables.scss" as *;
 
-
+.socials_icons {
+    padding-top: 50px;
+    cursor: pointer;
+}
 
 .footer {
     height: 800px;
