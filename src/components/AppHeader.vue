@@ -10,9 +10,10 @@ export default {
 <template>
     <div class="navHeader container-fluid">
         <div class="navBar d-flex justify-content-between">
-            <img src="../assets/imgProject/avadabarbers-stickylogo-x2-200x70.png" alt="">
+            <img src="../assets/imgProject/avadabarbers-logo-x2-200x70.png" alt="">
             <div class="d-flex align-items-baseline justify-content-end">
-                <font-awesome-icon icon="fa-solid fa-cart-shopping" style="color: white; font-size: 2rem; " />
+                <font-awesome-icon icon="fa-solid fa-cart-shopping"
+                    style="color: white; font-size: 2rem; margin-right: 10px; " />
                 <button class="btn btn-link text-decoration-none" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><font-awesome-icon
                         icon="fa-solid fa-bars" /></button>
@@ -26,7 +27,7 @@ export default {
                     </div>
                     <div class="offcanvas-body d-flex justify-content-center fs-5 align-items-center bg-dark">
                         <ul style="padding-bottom: 200px;">
-                            <li class=" text-decoration-none" v-for="eleMenu in ArrMenu" :key="eleMenu.name">
+                            <li v-for="eleMenu in ArrMenu" :key="eleMenu.name" class=" text-decoration-none mt-3">
                                 <a class=" text-decoration-none " style="color: white;" href="#">{{ eleMenu.name }}</a>
                             </li>
                         </ul>
@@ -94,15 +95,13 @@ export default {
     }
 
     a {
-        text-decoration: none;
-        height: 80px;
-        display: block;
-        width: 250px;
-        color: #be9359;
-        border: 4px solid $color-btn;
-        text-align: center;
-        padding: 20px;
-        font-size: 1.5rem;
+        @include linkBtn;
+        padding-inline: 50px;
+
+        &:hover {
+            color: white;
+            border: 4px solid white;
+        }
     }
 }
 
@@ -111,6 +110,10 @@ export default {
     max-width: 1400px;
     margin: auto;
     margin-top: 30px;
+
+    img {
+        width: 250px;
+    }
 
     .fa-bars {
         color: white;

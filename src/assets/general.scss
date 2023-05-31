@@ -1,5 +1,6 @@
 @use "../assets/styles/partial/variables.scss" as *;
 @forward "./styles/partial/variables.scss";
+@import "../node_modules/bootstrap/scss/bootstrap";
 
 * {
   margin: 0;

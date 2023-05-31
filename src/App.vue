@@ -45,7 +45,8 @@ export default {
                     mail: "info@yourwebsite.com",
                     phoneNumber: "+1(555) 555-1212"
                 },
-            ]
+            ],
+
 
 
         }

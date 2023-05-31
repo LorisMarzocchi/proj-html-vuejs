@@ -38,8 +38,8 @@ export default {
             <p>{{ article.description }}</p>
         </div>
     </div>
-    <div class=" d-flex justify-content-center pt-5" style="background-color: #F5F5F5;">
-        <a href="">READ MORE FROM OUR BLOG</a>
+    <div class="btnBlogContainer d-flex justify-content-center">
+        <span>READ MORE FROM OUR BLOG</span>
     </div>
 </template>
 
@@ -47,17 +47,19 @@ export default {
 <style lang="scss" scoped>
 @use "../assets/styles/partial/variables.scss" as *;
 
-a {
+.btnBlogContainer {
+    background-color: #F5F5F5;
+    padding-bottom: 150px;
+    padding-top: 100px
+}
+
+span {
+    @include linkBtn;
     text-decoration: none;
     font-weight: bold;
-    display: flex;
-    width: 450px;
-    color: #be9359;
-    border: 4px solid $color-btn;
-    padding: 20px;
-    padding-inline: 70px;
-    font-size: 1.2rem;
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
+
+
 
 }
 
@@ -70,10 +72,11 @@ a {
     .cardBlog {
 
         height: 100%;
-        width: calc((100% / 3) - 180px);
+        width: calc((100% / 3) - 100px);
+        padding-inline: 50px;
 
         img {
-            height: 300px;
+            // height: 320px;
             width: 100%;
         }
 
@@ -100,8 +103,8 @@ a {
 
 
     p {
-        padding-top: 50px;
-        font-size: 1.2rem;
+        padding-top: 120px;
+        font-size: 1.3rem;
         @include titleSmall;
     }
 

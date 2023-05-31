@@ -36,10 +36,13 @@ export default {
 
             </div>
             <div class="info">
-                <p></p>
-                <h1></h1>
-                <p></p>
-                <a href=""></a>
+                <p class="infoTitleSmall">THIS MONTHS FEATURED PRODUCT</p>
+                <h1>Shaving Butter</h1>
+                <p class="infoParag">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, iusto sit ullam
+                    sapiente quod
+                    distinctio deserunt amet. Minima, possimus porro quibusdam alias, voluptas omnis id quam deserunt nemo,
+                    ipsum neque.</p>
+                <a href="">BUY NOW</a>
             </div>
 
         </div>
@@ -62,9 +65,39 @@ export default {
 <style lang="scss" scoped>
 @use "../assets/styles/partial/variables.scss" as *;
 
+.info {
+    width: 50%;
+
+    .infoTitleSmall {
+        @include titleSmall;
+        padding-top: 40px;
+    }
+
+    h1 {
+        @include titleSection;
+    }
+
+    .infoParag {
+        color: $text-color;
+        margin-bottom: 70px;
+    }
+
+    a {
+        @include linkBtn;
+        padding-inline: 45px;
+
+        &:hover {
+            color: white;
+            border: 4px solid white;
+        }
+    }
+
+
+}
+
 .cardRewContainer {
     margin-top: 3rem;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: auto;
     background-color: white;
 
@@ -74,7 +107,7 @@ export default {
 
     height: 100%;
     width: calc(100% / 3);
-    margin-inline: 20px;
+    margin-inline: 50px;
 
     p {
         color: $text-color !important;
@@ -88,18 +121,20 @@ export default {
 
 .imageInfo {
     background-image: url(/src/assets/imgProject/avadabarbers-cta-background.jpg);
-    background-size: 45% 100%;
+    background-size: 100%;
     background-repeat: no-repeat;
-    height: 400px;
+
+    margin-right: 70px;
 
     img {
-        width: 45%;
+        width: 90%;
         height: 100%;
     }
 }
 
 .reviews {
-    height: 750px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 
 
     p {
@@ -115,14 +150,16 @@ export default {
 
 .featured {
     position: absolute;
-    height: 400px;
-    width: 850px;
+    height: 450px;
+    width: 1200px;
     top: -50px;
-    border: 1px solid red;
+    border-top: 5px solid $color-btn;
+    display: flex;
+    background-color: $bg-color;
 }
 
 .rewContainer {
-    padding-top: 400px;
+    padding-top: 450px;
     background-color: white;
     position: relative;
 }

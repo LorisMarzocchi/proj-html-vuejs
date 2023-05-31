@@ -49,9 +49,9 @@ export default {
         </div>
 
     </div>
-    <div class="text-center d-flex justify-content-center mt-5">
+    <div class="linkShop text-center d-flex justify-content-center ">
 
-        <a href="">SHOP OUR PRODUCT RANGE</a>
+        <a href="#">SHOP OUR PRODUCT RANGE</a>
     </div>
 </template>
 
@@ -62,19 +62,23 @@ export default {
     width: 25%;
 }
 
-a {
+.linkShop {
+    margin-top: 200px;
+    margin-bottom: 50px;
 
-    text-decoration: none;
-    display: flex;
-    width: 450px;
-    color: #be9359;
-    border: 4px solid $color-btn;
-    padding: 20px;
-    padding-inline: 80px;
-    font-size: 1.2rem;
-    margin-bottom: 150px;
-    margin-top: 120px;
+    a {
+        @include linkBtn;
+        padding-inline: 80px;
+        margin-bottom: 150px;
+        margin-top: 120px;
+
+        &:hover {
+            color: white;
+            border: 4px solid white;
+        }
+    }
 }
+
 
 .service {
     background-image: url(/src/assets/imgProject/triangleBlack.svg);
@@ -83,6 +87,7 @@ a {
     background-repeat: no-repeat;
     height: 100px;
     background-color: white;
+    margin-bottom: 110px;
 
 }
 
@@ -121,7 +126,8 @@ a {
 
 
     p {
-        @include titleSmall
+        @include titleSmall;
+        font-size: 1.3rem;
     }
 
     h1 {

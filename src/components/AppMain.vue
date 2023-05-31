@@ -46,7 +46,7 @@ export default {
         <p class="titleSmall fs-5 fw-bold">MENS GROOMING</p>
         <h1>Services</h1>
         <div class="serviceContainer d-flex justify-content-around">
-            <div v-for="service in ArrService" :key="service.id" class="cardService p-3 align-items-center">
+            <div v-for="service in ArrService" :key="service.id" class="cardService align-items-center">
                 <img :src="service.image" alt="">
                 <h3 class="mt-4">{{ service.title }}</h3>
                 <p class="serviceInfo">{{ service.parag }}</p>
@@ -64,36 +64,34 @@ export default {
 @use "../assets/styles/partial/variables.scss" as *;
 
 .infoContainer {
-    height: 700px;
+    // height: 700px;
+    padding-bottom: 150px;
 
     a {
-        text-decoration: none;
-        // height: 80px;
-        // width: 350px;
-        color: #be9359;
-        border: 4px solid $color-btn;
-        text-align: center;
-        padding: 20px;
-        font-size: 1.5rem;
+        @include linkBtn;
+        font-weight: bold;
+
+        &:hover {
+            color: black;
+            border: 4px solid black;
+        }
     }
 
     .titleSmall {
         color: $color-btn;
         font-weight: bold;
+
     }
 
     h1 {
-        font-weight: bold;
-        font-size: 5rem;
-        color: $text-color;
-        font-family: $font-title;
-
-
+        @include titleSection;
+        margin-bottom: 90px;
     }
 }
 
 .cardService {
-    width: 250px;
+    padding-inline: 35px;
+    font-size: 1.3rem;
 
 
     img {
@@ -121,7 +119,7 @@ export default {
 .serviceContainer {
     max-width: 1200px;
     margin: auto;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     margin-top: 40px;
 
     h3 {
@@ -135,13 +133,10 @@ export default {
 
 .mainInfo {
     margin-top: 8rem;
-    margin-bottom: 3rem;
+    margin-bottom: 8rem;
 
     h1 {
-        font-weight: bold;
-        font-size: 5rem;
-        color: $text-color;
-        font-family: 'Times New Roman', Times, serif;
+        @include titleSection;
     }
 
     h3 {
@@ -151,13 +146,13 @@ export default {
 
     a {
 
-        text-decoration: none;
+        @include linkBtn;
 
-        color: #be9359;
-        border: 4px solid $color-btn;
-        text-align: center;
-        padding: 20px;
-        font-size: 1.5rem;
+        &:hover {
+            color: white;
+            border: 4px solid white;
+        }
+
     }
 }
 
@@ -166,6 +161,7 @@ export default {
     background-size: 100%;
     background-repeat: no-repeat;
     height: 100px;
+    padding-bottom: 170px;
 
 }
 </style>

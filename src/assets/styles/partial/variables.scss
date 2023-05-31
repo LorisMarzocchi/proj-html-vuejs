@@ -14,3 +14,11 @@ $font-title: "Times New Roman", Times, serif;
   color: $text-color;
   font-family: $font-title;
 }
+@mixin linkBtn {
+  text-decoration: none;
+  color: $color-btn;
+  border: 4px solid $color-btn;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.5rem;
+}
