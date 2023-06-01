@@ -46,6 +46,7 @@ export default {
             <a href="">BOOK YOUR APPOINTMENT</a>
         </div>
     </div>
+    <h1>All Right Re</h1>
 </template>
 <style lang="scss" scoped>
 @use "../assets/styles/partial/variables.scss" as *;

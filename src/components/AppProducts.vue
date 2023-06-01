@@ -12,20 +12,20 @@ export default {
                 },
                 {
                     image: "src/assets/imgProject/scissors-400x400.png",
-                    title: "Brush",
-                    price: "$ 15.00"
+                    title: "Scissors",
+                    price: "$ 85.00"
 
                 },
                 {
                     image: "src/assets/imgProject/hot_oil_dark-400x400.png",
-                    title: "Brush",
+                    title: "Hot Oil",
                     price: "$ 15.00"
 
                 },
                 {
                     image: "src/assets/imgProject/straight_razor_dark-400x400.png",
-                    title: "Brush",
-                    price: "$ 15.00"
+                    title: "Straight Razor",
+                    price: "$ 30.00"
 
                 },
 
@@ -60,6 +60,10 @@ export default {
 
 .cardDescription {
     width: 25%;
+
+    h3 {
+        font-weight: bold;
+    }
 }
 
 .linkShop {

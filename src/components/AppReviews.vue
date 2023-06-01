@@ -14,13 +14,13 @@ export default {
 
                     reviews: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus magni dolor blanditiis totam aliquam doloribus sed, voluptatum deserunt, ab possimus atque corrupti, earum vitae ipsa nulla ratione pariatur. Enim, laboriosam.",
                     image: "src/assets/imgProject/avadabarbers-trimcut-gallery7-200x201.jpg",
-                    name: "John Doe",
+                    name: "Pete Jones",
                 },
                 {
 
                     reviews: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus magni dolor blanditiis totam aliquam doloribus sed, voluptatum deserunt, ab possimus atque corrupti, earum vitae ipsa nulla ratione pariatur. Enim, laboriosam.",
                     image: "src/assets/imgProject/avadabarbers-trimcut-gallery3-200x201.jpg",
-                    name: "John Doe",
+                    name: "Mark Wilson",
                 },
 
             ],

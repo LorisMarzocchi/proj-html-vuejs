@@ -62,10 +62,10 @@ export default {
 </script>
 
 <template>
-    <AppHeader :ArrMenu="ArrMenu" />
+    <AppHeader :ArrMenu="this.ArrMenu" />
     <AppMain />
-    <AppFooter v-for="info in ArrInfoCompany" :key="info.name" :name="info.name" :address="info.address" :city="info.city"
-        :mail="info.mail" :phoneNumber="info.phoneNumber" />
+    <AppFooter v-for="info in this.ArrInfoCompany" :key="info.name" :name="info.name" :address="info.address"
+        :city="info.city" :mail="info.mail" :phoneNumber="info.phoneNumber" />
 </template>
 
 <style lang="scss">

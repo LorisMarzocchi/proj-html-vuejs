@@ -76,10 +76,10 @@ span {
 
         height: 100%;
         width: calc((100% / 3) - 100px);
-        padding-inline: 50px;
+
 
         img {
-            // height: 320px;
+
             width: 100%;
         }
 
@@ -90,6 +90,7 @@ span {
             margin-bottom: 20px;
             font-family: $font-title;
             font-weight: bold;
+            padding-inline: 100px;
         }
 
         p {
