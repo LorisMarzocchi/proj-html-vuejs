@@ -10,7 +10,7 @@ $font-title: "Times New Roman", Times, serif;
 }
 @mixin titleSection {
   font-weight: bold;
-  font-size: 5rem;
+  font-size: 4rem;
   color: $text-color;
   font-family: $font-title;
 }
@@ -20,5 +20,5 @@ $font-title: "Times New Roman", Times, serif;
   border: 4px solid $color-btn;
   text-align: center;
   padding: 20px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }

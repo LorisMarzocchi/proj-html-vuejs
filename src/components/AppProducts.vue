@@ -37,22 +37,26 @@ export default {
 </script>
 <template>
     <div class="service"></div>
-    <div class="products text-center">
-        <p>WE HAVE YOU COVERED</p>
-        <h1>Avada Grooming Products</h1>
-    </div>
-    <div class="cardProduct d-flex justify-content-around">
-        <div class="cardDescription text-center" v-for="products in ArrProduct" :key="products.id">
-            <img :src="products.image" alt="">
-            <h3 class="">{{ products.title }}</h3>
-            <p>{{ products.price }}</p>
+    <div class="container-fluid background-area">
+
+        <div class="products text-center">
+            <p>WE HAVE YOU COVERED</p>
+            <h1>Avada Grooming Products</h1>
         </div>
-
+        <div class="cardProduct d-flex justify-content-around">
+            <div class="cardDescription text-center" v-for="products in ArrProduct" :key="products.id">
+                <img :src="products.image" alt="">
+                <h3 class="">{{ products.title }}</h3>
+                <p>{{ products.price }}</p>
+            </div>
+    
+        </div>
+        <div class="linkShop text-center d-flex justify-content-center ">
+    
+            <a href="#">SHOP OUR PRODUCT RANGE</a>
+        </div>
     </div>
-    <div class="linkShop text-center d-flex justify-content-center ">
-
-        <a href="#">SHOP OUR PRODUCT RANGE</a>
-    </div>
+    
 </template>
 
 <style lang="scss" scoped>
@@ -66,15 +70,28 @@ export default {
     }
 }
 
+
+.background-area {
+    background-image: url(/src/assets/imgProject/avadabarbers-reviewsbackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cardDescription {
+    width: 25%;
+
+    h3 {
+        font-weight: bold;
+    }
+}
+
 .linkShop {
-    margin-top: 200px;
-    margin-bottom: 50px;
+ 
 
     a {
         @include linkBtn;
-        padding-inline: 80px;
         margin-bottom: 150px;
-        margin-top: 120px;
 
         &:hover {
             color: white;
@@ -83,28 +100,22 @@ export default {
     }
 }
 
-
 .service {
     background-image: url(/src/assets/imgProject/triangleBlack.svg);
-    background-image: $bg-color;
     background-size: 100%;
     background-repeat: no-repeat;
     height: 100px;
     background-color: white;
-    margin-bottom: 110px;
-
+    // margin-bottom: 50px;
 }
 
 .cardProduct {
-    background-image: url(/src/assets/imgProject/avadabarbers-reviewsbackground.jpg);
-    background-size: cover;
     width: 100%;
     height: 500px;
     margin: auto;
     color: white;
     padding-inline: 150px;
     margin-top: 60px;
-
 
     img {
         width: 100%;
@@ -121,14 +132,10 @@ export default {
         font-family: $font-title;
         font-size: 1.2rem;
         text-align: center;
-
-
     }
 }
 
 .products {
-
-
     p {
         @include titleSmall;
         font-size: 1.3rem;
@@ -137,6 +144,5 @@ export default {
     h1 {
         @include titleSection
     }
-
 }
 </style>

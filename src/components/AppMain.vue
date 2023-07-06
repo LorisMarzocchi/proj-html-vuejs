@@ -43,7 +43,7 @@ export default {
         <a href="">MEET YOUR NEW BARBER</a>
     </div>
     <div class="service text-center"></div>
-    <AppService :ArrService="this.ArrService" />
+    <AppService :ArrService="ArrService" />
     <AppProducts />
     <AppReviews />
     <AppBlog />
@@ -54,8 +54,13 @@ export default {
 
 
 .mainInfo {
-    margin-top: 8rem;
-    margin-bottom: 8rem;
+    background-image: url(/src/assets/imgProject/avadabarbers-about-introbackground.jpg);
+    background-size: cover;
+    opacity: 0.8;
+    // background-position: center; 
+    background-repeat: no-repeat;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
 
     h1 {
         @include titleSection;
@@ -63,7 +68,7 @@ export default {
 
     h3 {
         color: $color-btn;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
 
     }
 
@@ -81,10 +86,11 @@ export default {
 
 .service {
     background-image: url(/src/assets/imgProject/triangle.svg);
+    background-color: #121212;
     background-size: 100%;
     background-repeat: no-repeat;
     height: 100px;
-    padding-bottom: 170px;
+    padding-bottom: 120px;
 
 }
 </style>

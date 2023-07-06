@@ -15,7 +15,6 @@ import { far } from "@fortawesome/free-regular-svg-icons";
 /* add icons to the library */
 library.add(fas, far);
 
-import "bootstrap/dist/css/bootstrap.css";
-import "bootstrap/dist/js/bootstrap.js";
-
 createApp(App).component("font-awesome-icon", FontAwesomeIcon).mount("#app");
+import "bootstrap/dist/js/bootstrap.js";
+import "bootstrap/dist/css/bootstrap.css";

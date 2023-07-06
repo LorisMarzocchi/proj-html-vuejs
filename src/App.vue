@@ -7,6 +7,7 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 export default {
     data() {
         return {
+            loading: true,
             ArrMenu: [
                 {
                     name: "Home",
@@ -57,6 +58,10 @@ export default {
         AppMain,
         AppFooter,
     },
+
+
+
+
 };
 
 </script>

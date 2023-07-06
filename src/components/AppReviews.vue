@@ -54,7 +54,7 @@ export default {
         <div class=" cardRewContainer d-flex justify-content-around">
             <div class="peopleRew" v-for="reviews in ArrReviws" :key="reviews.id">
                 <p>{{ reviews.reviews }}</p>
-                <img class=" rounded-circle" :src="reviews.image" alt="">
+                <img class="rounded-circle w-50 h-50 mt-3" :src="reviews.image" alt="">
                 <h3 class="mt-2">{{ reviews.name }}</h3>
             </div>
 

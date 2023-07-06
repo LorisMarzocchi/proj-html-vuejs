@@ -30,7 +30,7 @@ export default {
                 <li>{{ phoneNumber }}</li>
             </ul>
             <h3>FOLLOW US</h3>
-            <div class="icons" style="color: white; font-size: 2rem;">
+            <div class="icons" style="color: white; font-size: 1.5rem;">
                 <div class="socials_icons text-light">
                     <i class="fa-brands fa-facebook px-2"><a href="#"></a></i>
                     <i class="fa-brands fa-twitter px-2"><a href="#"></a></i>
@@ -46,7 +46,7 @@ export default {
             <a href="">BOOK YOUR APPOINTMENT</a>
         </div>
     </div>
-    <h1>All Right Re</h1>
+    <h3 class="text-center pb-4">All Right Reserved</h3>
 </template>
 <style lang="scss" scoped>
 @use "../assets/styles/partial/variables.scss" as *;
@@ -59,19 +59,19 @@ export default {
 .footer {
     height: 800px;
     padding-top: 80px;
-    padding-inline: 250px;
+    padding-inline: 50px;
 
     li {
         padding-right: 27px;
         margin-top: 10px;
         color: $text-color ;
         list-style: none;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     h3 {
         color: $color-btn;
-        padding-top: 2rem;
+        padding-top: 1.2rem;
     }
 }
 
@@ -98,7 +98,7 @@ export default {
     }
 
     h3 {
-        margin-top: 120px;
+        margin-top: 70px;
     }
 }
 

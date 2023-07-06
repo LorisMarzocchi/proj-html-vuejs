@@ -13,7 +13,7 @@ export default {
             <img src="../assets/imgProject/avadabarbers-logo-x2-200x70.png" alt="">
             <div class="d-flex align-items-baseline justify-content-end">
                 <font-awesome-icon icon="fa-solid fa-cart-shopping"
-                    style="color: white; font-size: 2rem; margin-right: 10px; " />
+                    />
                 <button class="btn btn-link text-decoration-none" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><font-awesome-icon
                         icon="fa-solid fa-bars" /></button>
@@ -41,12 +41,12 @@ export default {
         <div class="presentation mt-4 d-flex justify-content-between align-items-center">
             <div>
 
-                <h1>Barber shop</h1>
+                <h1>Barber Shop</h1>
                 <div class="line mt-5"></div>
                 <p class="mt-5 mb-5">The pinnacle of male Grooming</p>
                 <a class="" href="#">LEARN MORE</a>
             </div>
-            <img class="imgfocalmirror" src="../assets/imgProject/avadabarbers_hero_focalmirror-600x825.png" alt="">
+            <img class="imgfocalmirror" src="../assets/imgProject/avadabarbers_hero_focalmirror-400x550.png" alt="">
         </div>
 
     </div>
@@ -57,40 +57,46 @@ export default {
 .navHeader {
     background-image: url("../assets/imgProject/avadabarbers-homepage-hero-bg.jpg");
     background-position-x: center;
+    background-repeat: no-repeat;
     background-size: 100%;
-    height: 100%;
     padding-top: 2rem;
     position: relative;
 
     .btn-link {
-        height: 40px;
+        height: 70%;
+        margin-left: 1rem;
     }
 
 }
 
 .presentation {
 
-    width: 1400px;
+    width: 1200px;
     margin: auto;
     color: white;
+    padding-bottom: 50px;
+    padding-inline: 120px;
+    // .imgfocalmirror{
+    //     // margin-right: 50px;
+    // }
 
     h1 {
         font-weight: bold;
         font-family: $font-title;
         color: white;
-        font-size: 9rem;
+        font-size: 4rem;
     }
 
     .line {
         background-color: $color-btn;
-        height: 0.5rem;
-        width: 450px;
+        height: 0.2rem;
+        width: 230px;
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
 
     p {
-        font-size: 2rem;
+        font-size: 1.5rem;
         color: $text-color;
     }
 
@@ -107,17 +113,20 @@ export default {
 
 .navBar {
 
-    max-width: 1400px;
+    max-width: 1200px;
     margin: auto;
+    padding-inline: 120px;
+
     margin-top: 30px;
+    margin-bottom: 50px;
 
     img {
-        width: 250px;
+        width: 170px;
     }
 
-    .fa-bars {
+    .fa-bars, .fa-cart-shopping {
         color: white;
-        height: 40px;
+        height: 2rem;
     }
 
 
